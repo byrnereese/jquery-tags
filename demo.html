@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>jQuery Tags Demo</title>
+<link rel="stylesheet" type="text/css" href="jquery.tags.css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.tags.js"></script>
+<script type="text/javascript">
+$(document).ready( function() {
+  $('.tags').tags({
+    linkformat: 'http://localhost/tags/',
+  });
+});
+</script>
+</head>
+<body>
+
+<h1>Demo</h1>
+
+<form action="#" method="get">
+<input class="tags" type="text" name="tags" value="foo,bar,baz,foo" />
+<input type="submit" value="Go" />
+</form>
+</body>
+</html>
